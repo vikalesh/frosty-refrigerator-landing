@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap");
+
+:root {
+  --background: 222 32% 7%;
+  --foreground: 210 40% 98%;
+  --card: 222 28% 10%;
+  --muted: 217 16% 30%;
+  --muted-foreground: 215 20% 78%;
+  --primary: 6 85% 59%;
+  --border: 217 16% 22%;
+  --destructive: 0 84% 60%;
+  --radius: 12px;
+  --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.16);
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-sans);
+}
+
+a { color: inherit; }
+button, input, select { font: inherit; }
+
+.only-mobile { display: none !important; }
+
+.container {
+  width: min(100% - 64px, 1200px);
+  margin-inline: auto;
+}
+
+.section-eyebrow {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: hsl(var(--primary));
+  margin: 0 0 12px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 40px);
+  color: hsl(var(--foreground));
+  margin: 0 0 12px;
+}
+
+.section-copy {
+  font-size: 16px;
+  line-height: 1.65;
+  color: hsl(var(--muted-foreground));
+  opacity: 0.8;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    width: min(88%, 520px) !important;
+  }
+  .hero-left-gradient {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .container { width: min(100% - 32px, 1200px); }
+  .only-mobile { display: flex !important; }
+  .hero-frame { height: 680px !important; }
+  .hero-img { object-position: 65% center !important; }
+  .hero-left-gradient { width: 100% !important; background: linear-gradient(to bottom, rgba(10,14,20,0.75), rgba(10,14,20,0.92)) !important; }
+  .hero-content { left: 20px !important; right: 20px !important; top: auto !important; bottom: 56px !important; transform: none !important; width: auto !important; max-width: none !important; }
+  .hero-buttons a { width: 100%; justify-content: center; }
+  .trust-item { border-left: none !important; border-top: 1px solid hsl(var(--border)); padding: 20px 0 !important; }
+  .trust-item:first-child { border-top: none; }
+  .contact-card { padding: 28px 20px !important; }
+}
