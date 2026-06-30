@@ -13,14 +13,7 @@ export default function Navbar() {
       }}
     >
       <div
-        style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "14px 20px",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
+        className="navbar-flex"
       >
         {/* Logo */}
         <a
@@ -86,6 +79,7 @@ export default function Navbar() {
               color: "#fff",
               textDecoration: "none",
               fontWeight: 700,
+              fontSize:'12px'
             }}
           >
             📞 {PHONE_DISPLAY}
@@ -102,6 +96,7 @@ export default function Navbar() {
               borderRadius: "999px",
               textDecoration: "none",
               fontWeight: 700,
+              fontSize:'12px'
             }}
           >
             WhatsApp Now

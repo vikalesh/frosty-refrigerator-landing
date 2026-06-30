@@ -84,7 +84,8 @@ function Hero() {
       <div className="hero-frame" style={{ position: "relative", width: "100%", height: "clamp(480px, 72vh, 760px)", overflow: "hidden", backgroundColor: "#1a2230" }}>
         <Image
           className="hero-img"
-          src="/images/hero.svg"
+          // src="/images/hero.svg"
+          src="/images/refrigerator1.jpg"
           alt="Professional technician repairing a double door refrigerator at a customer's home in Mumbai"
           priority
           fill
@@ -335,8 +336,8 @@ function WhatsAppButton({ label, outline = false }: { label: string; outline?: b
 function FloatingMobileCTA() {
   return (
     <div className="only-mobile" style={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 100, borderTop: "1px solid hsl(var(--border))", backgroundColor: "hsl(var(--background))" }}>
-      <a href={`tel:${PHONE}`} style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: 8, fontWeight: 700, fontSize: 14, letterSpacing: "0.04em", textTransform: "uppercase", backgroundColor: "hsl(var(--primary))", color: "#fff", textDecoration: "none", padding: "16px 12px", minHeight: 60 }}>☎ Call {PHONE_DISPLAY}</a>
-      <a href={WA_LINK} target="_blank" rel="noopener noreferrer" style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: 8, fontWeight: 700, fontSize: 14, letterSpacing: "0.04em", textTransform: "uppercase", backgroundColor: "#25D366", color: "#fff", textDecoration: "none", padding: "16px 12px", minHeight: 60 }}>☘ WhatsApp Now</a>
+      <a href={`tel:${PHONE}`} style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: 8, fontWeight: 700, fontSize: 12, letterSpacing: "0.04em", textTransform: "uppercase", backgroundColor: "hsl(var(--primary))", color: "#fff", textDecoration: "none", padding: "16px 12px", minHeight: 60 }}>☎ Call {PHONE_DISPLAY}</a>
+      <a href={WA_LINK} target="_blank" rel="noopener noreferrer" style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: 8, fontWeight: 700, fontSize: 12, letterSpacing: "0.04em", textTransform: "uppercase", backgroundColor: "#25D366", color: "#fff", textDecoration: "none", padding: "16px 12px", minHeight: 60 }}>☘ WhatsApp Now</a>
     </div>
   );
 }
